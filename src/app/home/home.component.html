@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<main class="gallery">
+  <div *ngFor="let product of arrProduct" class="card">
+    <img [src]="product.img" alt="imagen de producto" >
+    <h4>{{ product.title }}</h4>
+    <p *ngIf="product.stock === true" > Disponibilidad: Disponible</p>
+    <p> Precio: {{ product.price }}</p>
+    <p> Unidades disponibles: {{ product.cantidadDis }}</p>
+  </div>
+</main>
+
+<app-footer></app-footer>

@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<main class="container-register">
+
+  <form class="register">
+    <h3 class="title">Registrate</h3>
+
+    <div class="field-container">
+      <label>Nombre de usuario</label>
+      <input type="text" class="field" [(ngModel)]="nameUser"/>
+    </div>
+
+    <div class="names">
+      <div class="field-container">
+        <label>Nombres</label>
+        <input type="text" class="field" [(ngModel)]="firstName"/>
+      </div>
+
+      <div class="field-container">
+        <label>Apellidos</label>
+        <input type="text" class="field" [(ngModel)]="lastName"/>
+      </div>
+    </div>
+
+    <div class="field-container">
+      <label>Contraseña</label>
+      <input type="password" class="field" [(ngModel)]="password"/>
+    </div>
+
+    <div class="field-container">
+      <label>Confirmar contraseña</label>
+      <input type="password" class="field" [(ngModel)]="confirmPassword"/>
+    </div>
+
+    <div class="container-button">
+      <button type="submit" class="button" (click)="setData()"> Registrar </button>
+    </div>
+
+
+  </form>
+</main>
