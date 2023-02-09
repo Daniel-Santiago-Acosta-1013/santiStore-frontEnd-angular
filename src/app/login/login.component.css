@@ -42,3 +42,16 @@
   border: none;
   background-color: #fff;
 }
+
+.button-send {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.button-send:hover {
+  background-color: #b3b3b3e8;
+}
+

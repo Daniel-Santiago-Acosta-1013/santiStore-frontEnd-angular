@@ -2,18 +2,20 @@
 
 <main class="container-login">
 
-  <form class="login">
+  <form class="login" (ngSubmit)="onSubmit()">
     <h3 class="title">Registrate</h3>
 
     <div class="field-container">
-      <label>Nombre de usuario</label>
-      <input type="text" class="field"/>
+      <label for="username">Nombre de usuario</label>
+      <input type="text" class="field" id="username" [(ngModel)]="user.username" name="username" required/>
     </div>
 
     <div class="field-container">
       <label>Contraseña</label>
-      <input type="password" class="field"/>
+      <input type="password" class="field" id="password" [(ngModel)]="user.password" name="password" required/>
     </div>
+
+    <button type="submit" class="button-send">Iniciar Sesión</button>
 
   </form>
 </main>
